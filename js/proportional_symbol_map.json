@@ -11,6 +11,36 @@
         "format": {"type": "topojson", "feature": "worldmap"}
       },
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
-    }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ting1999/FIT3179_Week9Homework/main/data/nuclear_power_plants.json"
+      },
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"}
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "tooltip": {"content": "data"}
+          },
+          "encoding": {
+            "size": {"field": "mag", 
+                     "type": "quantitative",
+                     "scale": {
+                          "domain": [4, 8]
+                        }},
+            "color": {"field": "depth", 
+                      "type": "quantitative",
+                      "scale":{
+                          "scheme":"reds"
+                      }          
+            }
+          }
+        }
+      ]
+    } 
   ]
 }
