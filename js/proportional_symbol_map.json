@@ -32,7 +32,7 @@
             "color": {"field": "Capacity", 
                       "type": "quantitative",
                       "scale":{
-                          "scheme":"redblue"
+                          "scheme":"reds"
                       }
             }
           }
