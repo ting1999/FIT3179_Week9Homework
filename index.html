@@ -9,5 +9,15 @@
 </head>
 <body>
   
+<div id="proportional_symbol_map"></div>
+
+<script type="text/javascript">
+
+  var spec2 = "js/proportional_symbol_map.json";
+  vegaEmbed('#proportional_symbol_map', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+  
 </body>
 </html>
